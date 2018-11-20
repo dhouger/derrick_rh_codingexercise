@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Square</title>
+	@Styles.Render("~/Content/Square.css")
+	@Scripts.Render("~/Scripts/Square.js")
+</head>
+<body>
+    <div>
+		<div>HTML and CSS</div>
+		<span id="blueSquare">
+			<span id="yellowSquare"></span>
+		</span>
+    </div>
+	<div id="canvasSquares">
+		<div>Canvas</div>
+		<canvas id="canvas" height="256" width="256"></canvas>
+	</div>
+</body>
+</html>

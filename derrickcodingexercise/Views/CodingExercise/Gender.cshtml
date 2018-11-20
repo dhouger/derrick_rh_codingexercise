@@ -1,0 +1,19 @@
+﻿<div class="container" ng-app="poll" ng-controller="gender">
+	<div class="row" ng-init="load()">
+		<div class="h1 col-md-4 text-center">I am...</div>
+	</div>
+	<div class="row container-fluid">
+		<div class="col-sm-2 text-center">
+			<div class="h3 text-muted">FEMALE</div>
+			<ion-icon class="ion-icon" name="md-woman"></ion-icon>
+			<div class="h2 bold {{femaleClass}}">{{femalePercent}}%</div>
+			<button class="btn btn-success" [disabled]="voted" ng-click="vote(0,1)" id="voteFemale"><span class="glyphicon glyphicon-ok"></span> Vote</button>
+		</div>
+		<div class="col-md-2 text-center">
+			<div class="h3 text-muted">MALE</div>
+			<ion-icon class="ion-icon" name="md-man"></ion-icon>
+			<div class="h2 bold {{maleClass}}">{{malePercent}}%</div>
+			<button class="btn btn-success" [disabled]="voted" ng-click="vote(1,0)" id="voteMale"><span class="glyphicon glyphicon-ok"></span> Vote</button>
+		</div>
+	</div>
+</div>

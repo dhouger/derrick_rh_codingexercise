@@ -1,0 +1,28 @@
+﻿body {
+}
+
+#blueSquare {
+	background-color: rgba(95, 149, 211, 1);
+	height: 256px;
+	position: absolute;
+	width: 256px;
+}
+
+#yellowSquare {
+	background-color: rgba(249, 255, 70, 1);
+	height: 128px;
+	margin-left: 64px;
+	margin-top: 64px;
+	position: inherit;
+	width: 128px;
+}
+
+#canvasSquares {
+	position: absolute;
+	top: 300px;
+}
+
+#canvas {
+	height: 256px;
+	width: 256px;
+}

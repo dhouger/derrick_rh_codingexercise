@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>What's Your Gender?</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+	@Scripts.Render("~/Scripts/app.js")
+	@Styles.Render("~/Content/css")
+	@Styles.Render("~/Content/Gender.css")
+	<link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container body-content">
+		@RenderBody()
+	</div>
+
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+	<script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+	@RenderSection("scripts", required: false)
+</body>
+</html>
